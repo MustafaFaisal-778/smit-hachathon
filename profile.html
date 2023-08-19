@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap.css">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: antiquewhite; */
+}       
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: #8327e5;
+
+
+}
+.head h4{
+    margin-left: 5%;
+    color: white;
+    margin-top: 8px;
+}
+.head p{
+    margin-right: 7%;
+    color: white;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.section1{
+    height: 78px;
+    background-color:aliceblue;
+    padding: 15px;
+    padding-left: 58px;
+}
+.section1 h1{
+    color:black;
+    /* font-weight: bold; */
+    /* background-color:white; */
+}
+.move{
+    /* margin-right: 2px; */
+    margin-right: 70px
+}
+.name{
+    /* margin-right: 2%;     */
+    width:100%;
+}
+a{
+    text-decoration: none;
+}
+.card1{
+    width: 76%;
+    height: auto;
+    margin: 0px auto;
+    /* padding: 16px; */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    min-height: 200px;
+}
+.image{
+    height: 200px;
+    width: 200px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    /* background-color: black; */
+    border-radius: 10px;
+
+}
+.image>img{
+    object-fit:contain;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;    
+}
+input{
+    margin-top: 2%;
+    height: 60px;
+    width: 55%;
+    padding: 0 14px;
+    /* margin: 20px 0; */
+    font-size: 18px;
+    outline: none;
+    border: 2px solid black;
+    background: transparent;
+    border-radius: 10px;
+    border-color: #8327e5 ;
+    background-color:white;
+}
+button{
+    width: 17%;
+}
+.upload{
+    text-decoration: none;
+    width: 97%;
+    font-size: 12px;
+    height: 28px;
+    border: none;
+    outline: none;
+}
+
+</style>
+<body>
+     <header>
+        <div class="head">
+            <h4>
+                Personal Blogging App
+            </h4>
+            <div class="move d-flex">
+                <a href="profile.html">
+                    <p class="name">Mustafa Faisal</p>
+                </a>
+                <a href="sign.html">
+                    <p>LogIn</p>
+                </a>
+
+            </div>
+        </div>
+
+    </header>
+    <section>
+        <div class="section1">
+            <a href=""><h1>
+                Profile
+            </h1></a>
+        </div>
+    </section>
+    <div class="card card1 mt-5">
+        <div class="image">
+            <!-- <img src="image/elonmusk.jpeg" alt=""> -->
+        </div>
+        <input type="file" class="upload">
+        <div class="name mt-5">
+            <h2>Mustafa Faisal</h2>
+        </div>
+        <h3>Password</h3>
+        
+        <div class="resetPassword">
+            <input type="Password" id="password" class="password" placeholder="Old Password">
+            <input type="Password" id="password" class="password" placeholder="new Password">
+            <input type="Password" id="password" class="password" placeholder="Repeat Password">
+        </div>
+        <button type="button" class="btn btn-primary mt-4">Update Password</button>
+        
+        
+    </div>
+
+    <script src="bootstrap.js"></script>
+    <script src="app.js"></script>
+    <script type="module" src="Firebase.js"></script>
+</body>
+</html>
